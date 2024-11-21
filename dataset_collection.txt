@@ -1,11 +1,14 @@
+
 # Data Collection Process
 
 ## Overview
-This document provides details about the data collection process for our dataset of floorplanning netlists, including a visual representation, and a step-by-step explanation.
+
+This document provides a comprehensive explanation of the data collection process for our floorplanning netlist dataset. It includes a visual workflow, details on the sources used, and preprocessing steps, ensuring transparency and reproducibility.
 
 ---
 
 ## Data Collection Workflow
+
 Below is a figure illustrating the steps involved in our data collection process:
 
 ![Data Collection Process](figures/figure.png)
@@ -14,38 +17,51 @@ Below is a figure illustrating the steps involved in our data collection process
 
 ## Detailed Explanation of the Workflow
 
-1. **Define Objectives**:
-   - Netlists are colleceted to train machine learning mdels to perform floorplanning.
-   - !! Specify key variables and data types required for the analysis.
+### 1. Define Objectives
+   - The dataset is collected to train machine learning models for 3D integrated circuit (IC) floorplanning.
+   - Key variables include block specifications (e.g., dimensions, connectivity) and metadata such as power consumption.
+   - Focus areas include optimizing area, wirelength, temperature, and through-silicon-vias (TSVs).
 
-2. **Source Identification**:
-   - Determine the sources of data (e.g., surveys, APIs, sensors).
-   - Explain the rationale for choosing these sources.
+### 2. Source Identification
+   - **Southern Methodist University (SMU) Platform**:
+     - Hosts benchmark netlists and circuits commonly used in academic and industry floorplanning research.
+   - **University of Michigan (UM) Platform**:
+     - Provides benchmark netlists for very-large-scale integration (VLSI) design, frequently referenced in 3D IC research.
+   - **GitHub Repositories**:
+     - A variety of repositories with IC netlists, including those shared by major players such as Google DeepMind.
 
-3. **Data Collection**:
-   - Tools and technologies used (e.g., Python scripts for scraping, manual surveys, IoT sensors).
-   - Sampling methods or criteria for data selection.
-   - Timeline of data collection.
+### 3. Data Download Steps
+   - **SMU Platform**:
+     1. Access the SMU Platform at https://s2.smu.edu/~manikas/.
+     2. Navigate to "Benchmark netlists and circuits."
+     3. Download the **MCNC Benchmark Netlists** (8 files relevant to block netlists for 3D IC floorplanning).
+   - **UM Platform**:
+     1. Visit the UM Platform at http://vlsicad.eecs.umich.edu/BK/CompaSS/results/gsrc_soft.html.
+     2. Download relevant benchmark netlists for VLSI design.
+   - **GitHub**:
+     - Perform a targeted query for IC netlists and manually review repositories for quality and relevance.
+     - Use Python scripts to automate the downloading process for selected repositories.
 
-4. **Preprocessing**:
-   - Initial steps for cleaning raw data (e.g., removing duplicates, handling missing values).
-   - Software used (e.g., pandas in Python, Excel).
+### 4. Preprocessing
+   - **Cleaning**:
+     - Standardization of formats (e.g., uniform units for dimensions such as micrometers).
+     - Removal of duplicate netlists to prevent bias in training.
+   - **Software**:
+     - Scripts written in Python using libraries like Pandas handled the majority of preprocessing.
 
-5. **Data Validation**:
-   - Methods for ensuring accuracy and consistency in the collected data.
-   - Any statistical checks or verification processes.
-
----
-
-## File Formats
-The dataset is provided in widely accepted, non-proprietary formats:
-- **CSV**: For structured data.
-- **JSON**: For hierarchical or relational data structures.
-
-Each format ensures compatibility with various analysis tools and programming languages.
+### 5. Data Validation
+   - **Methods**:
+     - Consistency checks for file integrity and completeness.
+     - Validation of block specifications and connectivity data against benchmarks.
+   - **Statistical Checks**:
+     - Verification of block dimensions, power values, and connectivity structure for anomalies.
 
 ---
 
 ## Notes on Limitations
-While care was taken to ensure data quality, please note:
-- [Briefly describe any limitations, such as sample size or biases.]
+
+While the data collection process prioritized quality and comprehensiveness, certain limitations must be noted:
+- The dataset reflects only publicly accessible netlists from the identified sources and may exclude proprietary or confidential industry designs.
+- Sampling is limited to files available as of **November 20, 2024**.
+- Variability in the level of detail across sources (e.g., GitHub repositories) may affect uniformity.
+

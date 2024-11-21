@@ -1,0 +1,125 @@
+[ 70 ] source -: time compass TEST/n600-2.soft ../results/n600-2.bbb --soft --CURVE_ACCURACY 200 --AREA_ACCURACY 0.1 --HIER_CLUSTER_BASE 3 --HIER_CLUSTER_AREA_DEV 2
+===== CompaSS (Compacting Soft Slicing Packings) =====
+WARNING: Algorithm not chosen, "--hierarchical" assumed.
+---< HIERARCHICAL Packing >---
+Details:
+  - Block type: all soft (Curve Accuracy = 200).
+  - Area accuracy: 0.10%.
+Parameters:
+  - HIER_CLUSTER_BASE: 3
+  - HIER_CLUSTER_AREA_DEV: 2.00
+  - HIER_INIT_AR: 1.20
+  - HIER_USE_AR_LEVEL: 2
+  - HIER_WIDTH_INCRE: 1.15
+  - HIER_HEIGHT_INCRE: 1.15
+  - HIER_INIT_DEADSPACE: 0.05
+  - HIER_DEADSPACE_INCRE: 1.50
+  - HIER_SIMILARITY_THRESHOLD: 1.90
+ 
+[0]===== Grouping 600 clusters...
+[0]===== Packing into 373 clusters...
+ * Aspect ratio bound used.
+ 
+blkArea:   628367.00 deadspace:     2381.61 (0.38%) time: 0.33
+ 
+[1]===== Grouping 373 clusters...
+[1]===== Packing into 257 clusters...
+ * Aspect ratio bound used.
+ 
+blkArea:   628367.00 deadspace:     3525.76 (0.56%) time: 0.53
+ 
+[2]===== Grouping 257 clusters...
+[2]===== Packing into 243 clusters...
+ * Aspect ratio bound used.
+ 
+blkArea:   628367.00 deadspace:     3525.76 (0.56%) time: 0.87
+ 
+[3]===== Grouping 243 clusters...
+[3]===== Packing into 172 clusters...
+ * Aspect ratio bound not used.
+ 
+blkArea:   628367.00 deadspace:     3540.18 (0.56%) time: 1.53
+ 
+[4]===== Grouping 172 clusters...
+[4]===== Packing into 120 clusters...
+ * Aspect ratio bound not used.
+ 
+blkArea:   628367.00 deadspace:     3597.04 (0.57%) time: 2.55
+ 
+[5]===== Grouping 120 clusters...
+[5]===== Packing into 84 clusters...
+ * Aspect ratio bound not used.
+ 
+blkArea:   628367.00 deadspace:     3664.48 (0.58%) time: 3.98
+ 
+[6]===== Grouping 84 clusters...
+[6]===== Packing into 81 clusters...
+ * Aspect ratio bound not used.
+ 
+blkArea:   628367.00 deadspace:     3664.49 (0.58%) time: 5.86
+ 
+[7]===== Grouping 81 clusters...
+[7]===== Packing into 54 clusters...
+ * Aspect ratio bound not used.
+ 
+blkArea:   628367.00 deadspace:     3842.76 (0.61%) time: 8.93
+ 
+[8]===== Grouping 54 clusters...
+[8]===== Packing into 39 clusters...
+ * Aspect ratio bound not used.
+ 
+blkArea:   628367.00 deadspace:     3863.48 (0.61%) time: 12.26
+ 
+[9]===== Grouping 39 clusters...
+[9]===== Packing into 27 clusters...
+ * Aspect ratio bound not used.
+ 
+blkArea:   628367.00 deadspace:     4009.88 (0.64%) time: 15.93
+ 
+[10]===== Grouping 27 clusters...
+[10]===== Packing into 18 clusters...
+ * Aspect ratio bound not used.
+ 
+blkArea:   628367.00 deadspace:     4032.24 (0.64%) time: 20.27
+ 
+[11]===== Grouping 18 clusters...
+[11]===== Packing into 12 clusters...
+ * Aspect ratio bound not used.
+ 
+blkArea:   628367.00 deadspace:     4145.49 (0.66%) time: 25.19
+ 
+[12]===== Grouping 12 clusters...
+[12]===== Packing into 9 clusters...
+ * Aspect ratio bound not used.
+ 
+blkArea:   628367.00 deadspace:     4145.56 (0.66%) time: 30.79
+ 
+[13]===== Grouping 9 clusters...
+[13]===== Packing into 3 clusters...
+ * Aspect ratio bound not used.
+ 
+finished 1 / 3. cluster size: 1 time: 31.86
+finished 2 / 3. cluster size: 4 time: 36.80
+finished 3 / 3. cluster size: 4 time: 42.44
+ 
+blkArea:   628367.00 deadspace:     4255.99 (0.68%) time: 42.98
+ 
+[14]===== Grouping 3 clusters...
+[14]===== Packing into 1 clusters...
+ * Aspect ratio bound not used.
+ 
+blkArea:   628367.00 deadspace:     4409.33 (0.70%) time: 51.63
+ 
+total area:   632776.33
+block area:   628367.00
+deadspace:      4409.33
+ 
+After operator optimization,
+blkArea:   628367.00 deadspace:        0.82 (0.00%) time: 55.54
+ 
+total area:   628367.82
+block area:   628367.00
+deadspace:         0.82
+ 
+Output successfully written to ../results/n600-2.bbb
+===== Thanks for using CompaSS =====

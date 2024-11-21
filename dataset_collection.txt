@@ -1,0 +1,51 @@
+# Data Collection Process
+
+## Overview
+This document provides details about the data collection process for our dataset of floorplanning netlists, including a visual representation, and a step-by-step explanation.
+
+---
+
+## Data Collection Workflow
+Below is a figure illustrating the steps involved in our data collection process:
+
+![Data Collection Process](figures/figure.png)
+
+---
+
+## Detailed Explanation of the Workflow
+
+1. **Define Objectives**:
+   - Netlists are colleceted to train machine learning mdels to perform floorplanning.
+   - !! Specify key variables and data types required for the analysis.
+
+2. **Source Identification**:
+   - Determine the sources of data (e.g., surveys, APIs, sensors).
+   - Explain the rationale for choosing these sources.
+
+3. **Data Collection**:
+   - Tools and technologies used (e.g., Python scripts for scraping, manual surveys, IoT sensors).
+   - Sampling methods or criteria for data selection.
+   - Timeline of data collection.
+
+4. **Preprocessing**:
+   - Initial steps for cleaning raw data (e.g., removing duplicates, handling missing values).
+   - Software used (e.g., pandas in Python, Excel).
+
+5. **Data Validation**:
+   - Methods for ensuring accuracy and consistency in the collected data.
+   - Any statistical checks or verification processes.
+
+---
+
+## File Formats
+The dataset is provided in widely accepted, non-proprietary formats:
+- **CSV**: For structured data.
+- **JSON**: For hierarchical or relational data structures.
+
+Each format ensures compatibility with various analysis tools and programming languages.
+
+---
+
+## Notes on Limitations
+While care was taken to ensure data quality, please note:
+- [Briefly describe any limitations, such as sample size or biases.]

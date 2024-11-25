@@ -1,0 +1,29 @@
+Blocks:
+clk, 826, 286, None
+
+Connections:
+C_0 cc_11 VDD GND new18 new19 new17 new16 Phi1H new1 new15 new14
+    TestHHQ1 TestLHQ1 new23 ResetLS1 new13 Phi2H new5 new4 new3 new2
+    new8 new10 new11 new6 new7 new9 new12;
+  C_1 cc_12 VDD GND new29 new30 new28 new27 Phi1H new1 new26 new25
+    TestHHQ1 TestLHQ1 new34 ResetLS1 new24 Phi2H new2 new22 new21 new20
+    new19 new18 new17 new13 new23 new23;
+  C_2 cc_13 VDD GND new40 new41 new39 new38 Phi1H new1 new37 new36
+    TestHHQ1 TestLHQ1 new45 ResetLS1 new35 Phi2H new20 new33 new32
+    new31 new30 new29 new28 new24 new34 new34;
+  C_3 cc_14 VDD GND new51 new52 new50 new49 Phi1H new1 new48 new47
+    TestHHQ1 TestLHQ1 ResetLS1 new46 Phi2H new31 new44 new43 new42
+    new41 new40 new39 new35 new45 new45;
+  C_4 cc_21 new12 new15 new14 new16 new54 new27 new25 new26 new53 new23
+    new23 VDD GND new59 new58 new57 new56 new55 new60 Phi2H new1
+    TestLHQ1 Phi1H TestHHQ1 new0;
+  C_5 cc_22 new23 new26 new25 new27 new53 new38 new36 new37 new61 new34
+    new34 VDD GND new66 new65 new64 new63 new62 new67 Phi2H new1
+    TestLHQ1 Phi1H TestHHQ1 new0;
+  C_6 cc_23 new34 new37 new36 new38 new61 new49 new47 new48 new68 new45
+    new45 VDD GND new73 new72 new71 new70 new69 new74 Phi2H new1
+    TestLHQ1 Phi1H TestHHQ1 new0;
+  C_7 cc_24 new45 new48 new47 new49 new68 new83 new85 new84 new82 new9
+    new86 new81 VDD GND new79 new78 new77 new76 new75 new80 Phi2H new1
+    TestLHQ1 Phi1H TestHHQ1 new0;
+  C_8 clk VSS VDD TestHHQ1 TestHS1 Phi2H Phi Phi Phi1H TestLHQ1;

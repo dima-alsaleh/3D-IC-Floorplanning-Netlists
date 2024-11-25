@@ -2,11 +2,11 @@ import requests
 import os
 
 # GitHub API URL for the folder
-api_url = "https://api.github.com/repos/uvahotspot/HotSpot/contents/examples/example6"
-base_raw_url = "https://raw.githubusercontent.com/uvahotspot/HotSpot/master/examples/example6/"
+api_url = "https://api.github.com/repos/DfX-NYUAD/Corblivar/contents/exp/benches"
+base_raw_url = "https://raw.githubusercontent.com/DfX-NYUAD/Corblivar/master/exp/benches/"
 
 # Target directory
-target_directory = r"C:\Users\Admin\Desktop\ECSE 689\d3\3D-IC-Floorplanning-Netlists\raw data\HotSpot"
+target_directory = r"C:\Users\Admin\Desktop\ECSE 689\d3\3D-IC-Floorplanning-Netlists\raw data\Corblivar"
 os.makedirs(target_directory, exist_ok=True)
 
 print(f"Target directory is set to: {target_directory}")

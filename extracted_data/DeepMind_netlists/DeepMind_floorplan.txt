@@ -1,0 +1,7 @@
+Blocks:
+P0, 2.208000, 0.480000, None
+S1, 2.208000, 0.480000, None
+M0, 120, 120, None
+M1, 80, 40, None
+
+Connections:

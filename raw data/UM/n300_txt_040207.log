@@ -1,0 +1,88 @@
+[ 112 ] source -: time compass TEST/n300.txt ../results/n300-txt.bbb --txt --HIER_CLUSTER_BASE 7 --HIER_USE_AR_LEVEL -1
+===== CompaSS (Compacting Soft Slicing Packings) =====
+WARNING: Algorithm not chosen, "--hierarchical" assumed.
+---< HIERARCHICAL Packing >---
+Details:
+  - Block type: all hard, free orientations.
+  - Area accuracy: 0.50%.
+Parameters:
+  - HIER_CLUSTER_BASE: 7
+  - HIER_CLUSTER_AREA_DEV: 1.85
+  - HIER_INIT_AR: 1.20
+  - HIER_USE_AR_LEVEL: -1 (i.e. aspect ratio constraint not imposed.)
+  - HIER_WIDTH_INCRE: 1.15
+  - HIER_HEIGHT_INCRE: 1.15
+  - HIER_INIT_DEADSPACE: 0.05
+  - HIER_DEADSPACE_INCRE: 1.50
+  - HIER_SIMILARITY_THRESHOLD: 1.90
+ 
+[0]===== Grouping 300 clusters...
+[0]===== Packing into 202 clusters...
+ * Aspect ratio bound not used.
+ 
+blkArea:   273170.00 deadspace:      356.00 (0.13%) time: 0.09
+ 
+[1]===== Grouping 202 clusters...
+[1]===== Packing into 157 clusters...
+ * Aspect ratio bound not used.
+ 
+blkArea:   273170.00 deadspace:      615.00 (0.23%) time: 0.11
+ 
+[2]===== Grouping 157 clusters...
+[2]===== Packing into 119 clusters...
+ * Aspect ratio bound not used.
+ 
+blkArea:   273170.00 deadspace:     1091.00 (0.40%) time: 0.11
+ 
+[3]===== Grouping 119 clusters...
+[3]===== Packing into 87 clusters...
+ * Aspect ratio bound not used.
+ 
+blkArea:   273170.00 deadspace:     1866.00 (0.68%) time: 0.12
+ 
+[4]===== Grouping 87 clusters...
+[4]===== Packing into 66 clusters...
+ * Aspect ratio bound not used.
+ 
+blkArea:   273170.00 deadspace:     2943.00 (1.08%) time: 0.12
+ 
+[5]===== Grouping 66 clusters...
+[5]===== Packing into 49 clusters...
+ * Aspect ratio bound not used.
+ 
+blkArea:   273170.00 deadspace:     4354.00 (1.59%) time: 0.13
+ 
+[6]===== Grouping 49 clusters...
+[6]===== Packing into 7 clusters...
+ * Aspect ratio bound not used.
+ 
+finished 1 / 7. cluster size: 8 time: 1.83
+finished 2 / 7. cluster size: 2 time: 1.83
+finished 3 / 7. cluster size: 8 time: 4.08
+finished 4 / 7. cluster size: 7 time: 4.30
+finished 5 / 7. cluster size: 8 time: 4.84
+finished 6 / 7. cluster size: 8 time: 5.36
+finished 7 / 7. cluster size: 8 time: 6.28
+ 
+blkArea:   273170.00 deadspace:    12157.00 (4.45%) time: 6.28
+ 
+[7]===== Grouping 7 clusters...
+[7]===== Packing into 1 clusters...
+ * Aspect ratio bound not used.
+ 
+blkArea:   273170.00 deadspace:    21330.00 (7.81%) time: 6.86
+ 
+total area:   294500.00
+block area:   273170.00
+deadspace:     21330.00
+ 
+After operator optimization,
+blkArea:   273170.00 deadspace:    18569.00 (6.80%) time: 6.87
+ 
+total area:   291739.00
+block area:   273170.00
+deadspace:     18569.00
+ 
+Output successfully written to ../results/n300-txt.bbb
+===== Thanks for using CompaSS =====
+6.860u 0.010s 0:10.65 64.5%     0+0k 0+0io 268pf+0w

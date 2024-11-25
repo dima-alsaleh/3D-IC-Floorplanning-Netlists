@@ -1,0 +1,77 @@
+[ 105 ] source -: time compass TEST/n200.txt ../results/n200-txt.bbb --txt --HIER_CLUSTER_BASE 8
+===== CompaSS (Compacting Soft Slicing Packings) =====
+WARNING: Algorithm not chosen, "--hierarchical" assumed.
+---< HIERARCHICAL Packing >---
+Details:
+  - Block type: all hard, free orientations.
+  - Area accuracy: 0.50%.
+Parameters:
+  - HIER_CLUSTER_BASE: 8
+  - HIER_CLUSTER_AREA_DEV: 1.85
+  - HIER_INIT_AR: 1.20
+  - HIER_USE_AR_LEVEL: 2
+  - HIER_WIDTH_INCRE: 1.15
+  - HIER_HEIGHT_INCRE: 1.15
+  - HIER_INIT_DEADSPACE: 0.05
+  - HIER_DEADSPACE_INCRE: 1.50
+  - HIER_SIMILARITY_THRESHOLD: 1.90
+ 
+[0]===== Grouping 200 clusters...
+[0]===== Packing into 132 clusters...
+ * Aspect ratio bound used.
+ 
+blkArea:   175696.00 deadspace:     1378.00 (0.78%) time: 0.19
+ 
+[1]===== Grouping 132 clusters...
+[1]===== Packing into 102 clusters...
+ * Aspect ratio bound used.
+ 
+blkArea:   175696.00 deadspace:     2245.00 (1.28%) time: 0.20
+ 
+[2]===== Grouping 102 clusters...
+[2]===== Packing into 77 clusters...
+ * Aspect ratio bound used.
+ 
+blkArea:   175696.00 deadspace:     3823.00 (2.18%) time: 0.20
+ 
+[3]===== Grouping 77 clusters...
+[3]===== Packing into 64 clusters...
+ * Aspect ratio bound not used.
+ 
+blkArea:   175696.00 deadspace:     3990.00 (2.27%) time: 0.21
+ 
+[4]===== Grouping 64 clusters...
+[4]===== Packing into 8 clusters...
+ * Aspect ratio bound not used.
+ 
+finished 1 / 8. cluster size: 9 time: 2.15
+finished 2 / 8. cluster size: 8 time: 2.78
+finished 3 / 8. cluster size: 9 time: 6.45
+finished 4 / 8. cluster size: 9 time: 7.42
+finished 5 / 8. cluster size: 3 time: 7.42
+finished 6 / 8. cluster size: 9 time: 8.37
+finished 7 / 8. cluster size: 8 time: 8.71
+finished 8 / 8. cluster size: 9 time: 8.92
+ 
+blkArea:   175696.00 deadspace:     8751.00 (4.98%) time: 8.92
+ 
+[5]===== Grouping 8 clusters...
+[5]===== Packing into 1 clusters...
+ * Aspect ratio bound not used.
+ 
+blkArea:   175696.00 deadspace:    15579.00 (8.87%) time: 10.42
+ 
+total area:   191275.00
+block area:   175696.00
+deadspace:     15579.00
+ 
+After operator optimization,
+blkArea:   175696.00 deadspace:    11378.00 (6.48%) time: 10.43
+ 
+total area:   187074.00
+block area:   175696.00
+deadspace:     11378.00
+ 
+Output successfully written to ../results/n200-txt.bbb
+===== Thanks for using CompaSS =====
+10.420u 0.010s 0:16.44 63.4%    0+0k 0+0io 268pf+0w

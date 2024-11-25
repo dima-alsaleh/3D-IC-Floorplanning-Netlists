@@ -1,0 +1,65 @@
+[ 94 ] source -: time compass TEST/n100.txt ../results/n100-txt.bbb --txt --HIER_CLUSTER_BASE 8
+===== CompaSS (Compacting Soft Slicing Packings) =====
+WARNING: Algorithm not chosen, "--hierarchical" assumed.
+---< HIERARCHICAL Packing >---
+Details:
+  - Block type: all hard, free orientations.
+  - Area accuracy: 0.50%.
+Parameters:
+  - HIER_CLUSTER_BASE: 8
+  - HIER_CLUSTER_AREA_DEV: 1.85
+  - HIER_INIT_AR: 1.20
+  - HIER_USE_AR_LEVEL: 2
+  - HIER_WIDTH_INCRE: 1.15
+  - HIER_HEIGHT_INCRE: 1.15
+  - HIER_INIT_DEADSPACE: 0.05
+  - HIER_DEADSPACE_INCRE: 1.50
+  - HIER_SIMILARITY_THRESHOLD: 1.90
+ 
+[0]===== Grouping 100 clusters...
+[0]===== Packing into 65 clusters...
+ * Aspect ratio bound used.
+ 
+blkArea:   179501.00 deadspace:     2690.00 (1.50%) time: 0.02
+ 
+[1]===== Grouping 65 clusters...
+[1]===== Packing into 64 clusters...
+ * Aspect ratio bound not used.
+ 
+blkArea:   179501.00 deadspace:     2690.00 (1.50%) time: 0.02
+ 
+[2]===== Grouping 64 clusters...
+[2]===== Packing into 8 clusters...
+ * Aspect ratio bound not used.
+ 
+finished 1 / 8. cluster size: 9 time: 1.75
+finished 2 / 8. cluster size: 7 time: 1.79
+finished 3 / 8. cluster size: 3 time: 1.79
+finished 4 / 8. cluster size: 9 time: 2.02
+finished 5 / 8. cluster size: 9 time: 2.54
+finished 6 / 8. cluster size: 9 time: 2.72
+finished 7 / 8. cluster size: 9 time: 3.56
+finished 8 / 8. cluster size: 9 time: 3.80
+ 
+blkArea:   179501.00 deadspace:     9313.00 (5.19%) time: 3.80
+ 
+[3]===== Grouping 8 clusters...
+[3]===== Packing into 1 clusters...
+ * Aspect ratio bound not used.
+ 
+blkArea:   179501.00 deadspace:    14874.00 (8.29%) time: 4.16
+ 
+total area:   194375.00
+block area:   179501.00
+deadspace:     14874.00
+ 
+After operator optimization,
+blkArea:   179501.00 deadspace:    13146.00 (7.32%) time: 4.17
+ 
+total area:   192647.00
+block area:   179501.00
+deadspace:     13146.00
+ 
+Output successfully written to ../results/n100-txt.bbb
+===== Thanks for using CompaSS =====
+4.170u 0.000s 0:06.28 66.4%     0+0k 0+0io 268pf+0w

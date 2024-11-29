@@ -1,12 +1,16 @@
 import requests
 import os
-
+import argparse
 # GitHub API URL for the folder
-api_url = "https://api.github.com/repos/DfX-NYUAD/Corblivar/contents/exp/benches"
-base_raw_url = "https://raw.githubusercontent.com/DfX-NYUAD/Corblivar/master/exp/benches/"
+api_url = "https://api.github.com/repos/uvahotspot/HotSpot/contents/examples/example6"
+base_raw_url = "https://raw.githubusercontent.com/uvahotspot/HotSpot/master/examples/example6/"
 
 # Target directory
-target_directory = r"C:\Users\Admin\Desktop\ECSE 689\d3\3D-IC-Floorplanning-Netlists\raw data\Corblivar"
+parser = argparse.ArgumentParser(description="Specify the output directory for downloaded files.")
+parser.add_argument("output_dir", help="Target directory to save files")
+args = parser.parse_args()
+
+target_directory = args.output_dir
 os.makedirs(target_directory, exist_ok=True)
 
 print(f"Target directory is set to: {target_directory}")

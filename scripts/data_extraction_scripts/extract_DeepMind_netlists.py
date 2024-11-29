@@ -4,9 +4,9 @@ import re
 
 def parse_netlist(input_dir, output_dir):
     # Locate input file in the directory
-    input_file = os.path.join(input_dir, "netlist.pb.txt")
+    input_file = os.path.join(input_dir, "DeepMind_data.txt")
     if not os.path.isfile(input_file):
-        print(f"Error: The file 'netlist.pb.txt' was not found in the directory {input_dir}")
+        print(f"Error: The file 'DeepMind_data.txt' was not found in the directory {input_dir}")
         sys.exit(1)
 
     # Ensure output directory exists
@@ -15,7 +15,7 @@ def parse_netlist(input_dir, output_dir):
         sys.exit(1)
 
     # Define output file path
-    output_file = os.path.join(output_dir, "DeepMind_floorplan.txt")
+    output_file = os.path.join(output_dir, "DeepMind_parsed.txt")
 
     with open(input_file, 'r') as f:
         content = f.read()

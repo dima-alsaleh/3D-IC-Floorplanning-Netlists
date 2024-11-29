@@ -84,8 +84,20 @@ if __name__ == "__main__":
 
     for filename in os.listdir(input_folder):
         if filename.endswith(".yal.txt"):
+
+
+
+
+           
             input_path = os.path.join(input_folder, filename)
-            output_path = os.path.join(output_folder, f"{filename}_parsed.txt")
+
+
+
+            base_name = filename[:-8]  # Remove ".yal.txt" from the end of the filename
+            output_path = os.path.join(output_folder, f"SMU_{base_name}_parsed.txt")
+
+            # Add the prefix "SMU_" to the output file name
+            #output_path = os.path.join(output_folder, f"SMU_{filename}_parsed.txt")
 
             # Parse and generate output
             blocks, connections = parse_yal_file(input_path)
@@ -98,3 +110,31 @@ if __name__ == "__main__":
             print(f"Processed {filename} -> {output_path}")
         else:
             print(f"Skipping {filename} (not a .yal.txt file)")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

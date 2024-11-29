@@ -1,15 +1,26 @@
 import requests
 import os
+import argparse
 
 # URL to the raw file on GitHub
 file_url = "https://raw.githubusercontent.com/google-research/circuit_training/main/circuit_training/environment/test_data/simple_with_coords/netlist.pb.txt"
 
-# Target directory
-target_directory = r"C:\Users\Admin\Desktop\ECSE 689\d3\3D-IC-Floorplanning-Netlists\raw data\DeepMind"
+
+
+
+
+
+parser = argparse.ArgumentParser(description="Specify the output directory for the downloaded file.")
+parser.add_argument("output_dir", help="Target directory to save the file")
+args = parser.parse_args()
+
+# Target directory from terminal argument
+target_directory = args.output_dir
 os.makedirs(target_directory, exist_ok=True)
 
+
 # File name
-file_name = os.path.basename(file_url)
+file_name = "DeepMind_data.txt"
 
 print(f"Target directory is set to: {target_directory}")
 print(f"Downloading {file_name} from {file_url}")

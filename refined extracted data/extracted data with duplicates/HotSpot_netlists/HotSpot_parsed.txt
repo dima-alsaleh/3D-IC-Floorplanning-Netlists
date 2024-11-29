@@ -1,0 +1,33 @@
+Blocks:
+Icache, 2889, 2889, 3.9243
+Dcache, 2797, 2797, 6.6828
+Bpred, 1506, 1507, 1.6944
+DTB, 1515, 1515, 0.0837
+FPAdd, 1393, 1393, 1.0198
+FPReg, 914, 914, 0.7009
+FPMul, 1441, 1441, 0.8267
+FPMap, 1202, 1202, 0.0965
+IntMap, 1133, 1132, 0.4315
+IntQ, 1326, 1326, 0.171
+IntReg, 1107, 1107, 2.249
+IntExec, 1996, 1996, 3.3707
+FPQ, 1202, 1202, 0.0312
+LdStQ, 1119, 1119, 1.5474
+ITB, 884, 885, 0.174
+L2, 14640, 14639, 3.4428
+
+Connections:
+c_0 IntExec IntQ
+c_1 Bpred ITB
+c_2 Bpred Icache
+c_3 Dcache LdStQ
+c_4 IntMap IntQ
+c_5 IntQ IntReg
+c_6 DTB LdStQ
+c_7 IntMap LdStQ
+c_8 FPAdd FPQ
+c_9 Dcache L2
+c_10 FPMul FPQ
+c_11 Icache L2
+c_12 FPMap FPQ
+c_13 FPQ FPReg

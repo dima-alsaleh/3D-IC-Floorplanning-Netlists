@@ -60,7 +60,7 @@ def main():
     output_dir = sys.argv[2]
     desc_file = os.path.join(input_dir, "ev6.desc")
     power_file = os.path.join(input_dir, "avg.p")
-    output_file = os.path.join(output_dir, "HotSpot_floorplan.txt")
+    output_file = os.path.join(output_dir, "HotSpot_parsed.txt")
 
     if not os.path.exists(desc_file):
         print(f"Error: {desc_file} does not exist.")

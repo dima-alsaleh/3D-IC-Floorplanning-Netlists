@@ -57,5 +57,5 @@ if __name__ == "__main__":
             # Process each file in the input directory
             for file_name in os.listdir(input_dir):
                 input_path = os.path.join(input_dir, file_name)
-                output_path = os.path.join(output_dir, f"{os.path.splitext(file_name)[0]}_processed.txt")
+                output_path = os.path.join(output_dir, f"{os.path.splitext(file_name)[0]}_parsed.txt")
                 process_file(input_path, output_path)

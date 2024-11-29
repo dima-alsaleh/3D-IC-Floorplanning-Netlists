@@ -1,0 +1,18 @@
+Width:
+  Average: 132.17
+  1st Quartile: 23.00
+  3rd Quartile: 44.00
+  Median: 34.00
+
+Power:
+  Average: 0.46
+  1st Quartile: 0.01
+  3rd Quartile: 0.07
+  Median: 0.02
+
+Aspect Ratio:
+  Average: 1.22
+  1st Quartile: 0.68
+  3rd Quartile: 1.54
+  Median: 1.00
+

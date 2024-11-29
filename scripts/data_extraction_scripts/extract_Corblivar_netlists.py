@@ -86,7 +86,8 @@ if __name__ == "__main__":
         # Process files without an extension
         if '.' not in filename:
             input_path = os.path.join(input_folder, filename)
-            output_path = os.path.join(output_folder, f"{filename}_parsed.txt")
+            # Add the prefix "Corblivar_" to the output file name
+            output_path = os.path.join(output_folder, f"Corblivar_{filename}_parsed.txt")
 
             # Parse and generate output
             blocks, connections = parse_yal_file(input_path)
@@ -97,5 +98,6 @@ if __name__ == "__main__":
                 out_file.write(output)
 
             print(f"Processed {filename} -> {output_path}")
-        else:
-            print(f"Skipping {filename} (has an extension)")
+        #else:
+            # Skip files with extensions
+            #print(f"Skipping {filename} (has an extension)")

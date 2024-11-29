@@ -114,19 +114,20 @@ For further details, refer to the included research proposal or contact the repo
 
 
 
-# Data Collection Process
+# Data Collection and Refinement Process
 
 ## Overview
 
-This document provides a comprehensive explanation of the data collection process for our floorplanning netlist dataset. It includes a visual workflow, details on the sources used, and preprocessing steps, ensuring transparency and reproducibility.
+This section of the document provides a comprehensive explanation of the data collection process for our floorplanning netlist dataset. It includes a visual workflow, 
+details on the sources used, and preprocessing steps, and how to run scripts, ensuring transparency and reproducibility.
 
 ---
 
 ## Data Collection Workflow
 
-Below is a figure illustrating the steps involved in our data collection process:
+Below is a figure illustrating the steps involved in our data collection and data extraction processes:
 
-![Data Collection Process](figures/figure.png)
+![Data Collection and Extraction Schema](./additional%20ressources/data%20collection%20schema.png)
 
 ---
 
@@ -172,6 +173,97 @@ Below is a figure illustrating the steps involved in our data collection process
      - Verification of block dimensions, power values, and connectivity structure for anomalies.
 
 ---
+## External Resources and Dependencies for Replication
+
+This repository requires several Python libraries to run the scripts. Below is a list of the libraries, their purpose, and installation instructions.
+
+### Required Libraries
+
+
+
+
+1. **Python**  
+   - **Purpose**: The scripts in this repository require Python 3.x to run. Make sure you have Python installed.  
+   - **Installation**:  
+     - For installation instructions, visit the official Python website: [Download Python](https://www.python.org/downloads/)
+     - Ensure Python 3.x is installed and added to your system’s PATH.
+
+
+2. **requests**  
+   - **Purpose**: Allows you to send HTTP requests, which is useful for interacting with web resources or APIs.  
+   - **Installation**:  
+     ```bash
+     pip install requests
+     ```
+   - **Link**: [requests documentation](https://docs.python-requests.org/en/latest/)
+
+3. **os**  
+   - **Purpose**: Provides a way to interact with the operating system, allowing you to work with directories, files, and environment variables.  
+   - **Installation**: This is part of Python’s standard library, so no installation is required.  
+   - **Link**: [os module documentation](https://docs.python.org/3/library/os.html)
+
+4. **argparse**  
+   - **Purpose**: Used for parsing command-line arguments, which allows you to pass parameters when running the script from the terminal.  
+   - **Installation**: This is part of Python’s standard library, so no installation is required.  
+   - **Link**: [argparse documentation](https://docs.python.org/3/library/argparse.html)
+
+5. **re**  
+   - **Purpose**: Provides support for regular expressions in Python, allowing you to perform complex text searching and manipulation.  
+   - **Installation**: This is part of Python’s standard library, so no installation is required.  
+   - **Link**: [re module documentation](https://docs.python.org/3/library/re.html)
+
+6. **random**  
+   - **Purpose**: Implements pseudo-random number generators for various distributions, used for generating random numbers or selecting random elements.  
+   - **Installation**: This is part of Python’s standard library, so no installation is required.  
+   - **Link**: [random module documentation](https://docs.python.org/3/library/random.html)
+
+7. **sys**  
+    - **Purpose**: Provides access to system-specific parameters and functions, such as handling command-line arguments and interacting with the Python
+     runtime environment.  
+    - **Installation**: This is part of Python’s standard library, so no installation is required.  
+    - **Link**: [sys module documentation](https://docs.python.org/3/library/sys.html)
+
+
+8. **matplotlib**  
+   - **Purpose**: A plotting library for creating static, animated, and interactive visualizations in Python.  
+   - **Installation**:  
+     ```bash
+     pip install matplotlib
+     ```
+   - **Link**: [matplotlib documentation](https://matplotlib.org/)
+
+9. **numpy**  
+   - **Purpose**: A library for numerical computing in Python, providing support for large, multi-dimensional arrays and matrices, along with a large collection
+    of high-level mathematical functions.  
+   - **Installation**:  
+     ```bash
+     pip install numpy
+     ```
+   - **Link**: [numpy documentation](https://numpy.org/)
+
+10. **pandas**  
+   - **Purpose**: A library used for data manipulation and analysis, providing data structures like DataFrame for handling and analyzing data.  
+   - **Installation**:  
+     ```bash
+     pip install pandas
+     ```
+   - **Link**: [pandas documentation](https://pandas.pydata.org/)
+
+11. **shutil**  
+   - **Purpose**: Provides a higher-level interface for file operations, including copying and removing files and directories.  
+   - **Installation**: This is part of Python’s standard library, so no installation is required.  
+   - **Link**: [shutil module documentation](https://docs.python.org/3/library/shutil.html)
+
+### Installation Instructions
+
+To set up the environment for this repository, again please ensure you have Python 3.x installed and properly added to your system's PATH. 
+Then, you can install the necessary dependencies
+ using `pip` by running the following command:
+
+
+pip install <library_name>>
+
+
 
 ## Notes on Limitations
 

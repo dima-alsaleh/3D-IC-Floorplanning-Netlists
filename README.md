@@ -3,11 +3,30 @@
 
 ## Repository Purpose
 
-This repository supports research on evaluating machine learning (ML) optimization models for three-dimensional (3D) integrated circuit (IC) floorplanning. It aims to:
+This repository supports research on evaluating machine learning (ML) optimization models for three-dimensional (3D) integrated circuit (IC) floorplanning. 
+The goal is to advance the field of 3D IC design by exploring the potential of ML models in solving complex floorplanning problems and comparing their effectiveness against traditional search-based approaches.
 
-1. Train ML models to perform floorplanning for 3D ICs.
-2. Compare ML-based models with traditional search-based floorplanners.
-3. Evaluate models across metrics such as area, wirelength, temperature, and the number of through-silicon-vias (TSVs).
+Specifically, the repository aims to:
+1. Train ML models to perform floorplanning for 3D ICs. The model should be capable of generating optimized floorplans for 3D ICs. To train the model a dataset is required.
+2. Compare the performance and quality of output of ML-based models with traditional search-based floorplanners on various circuits.
+3. Train and assess the effectiveness of ML models in optimizing key metrics that significantly influence 3D IC performance and manufacturability:
+
+    Area: Minimize the overall footprint of the design to conserve chip space.
+    Wirelength: Reduce the total length of interconnects to communication delays.
+    Temperature: Achieve optimal thermal distribution to prevent hotspots and ensure long-term reliability.
+    Through-Silicon-Vias (TSVs): Minimize the number of TSVs to lower costs and decrease communication delays.
+
+
+Therefore, to train, test, and compare ML models we require a dataset of netlists with industry significance.
+These netlists can include dimensions of circuit components (or blocks) for area optimization, connections between blocks for wirelength and number of TSVs optimization, and power requirements 
+of blocks for thermal optimization. Thus the dataset obtained is simply a collection of netlists of various circuits with details regarding the components of these circuits.
+
+The collected netlists vary in the type and completeness of data they provide. Some netlists include a subset of these attributes, focusing on specific aspects such as 
+dimensions or connections, while others provide all the required details, enabling a more holistic approach to optimization. These variations reflect the diversity of design 
+challenges and application-specific needs within the industry, ensuring the dataset is robust and representative of real-world scenarios.
+Additional information regarding the purpose of the repository can be found in [Research Question PDF](./additional%20ressources/research%20question.pdf) and in 
+[Study Design PDF](./additional%20ressources/study%20design.pdf)
+
 
 ## Data Sources
 

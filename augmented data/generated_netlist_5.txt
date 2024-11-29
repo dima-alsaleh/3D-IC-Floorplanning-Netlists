@@ -1,0 +1,73 @@
+Blocks:
+bk850, 26, 24, 0.02
+bk974, 43, 35, 0.06
+bk574, 37, 26, 0.03
+bk748, 36, 36, 0.04
+bk543, 25, 33, 0.03
+bk253, 28, 25, 0.05
+bk287, 27, 33, 0.04
+bk485, 26, 34, 0.04
+bk223, 42, 38, 0.04
+bk313, 29, 28, 0.02
+bk451, 28, 21, 0.04
+bk886, 32, 31, 0.02
+bk201, 43, 54, 0.02
+bk93, 37, 54, 0.04
+bk440, 24, 29, 0.05
+bk510, 24, 32, 0.03
+bk498, 31, 35, 0.06
+bk812, 36, 34, 0.05
+bk21, 40, 57, 0.04
+bk491, 43, 49, 0.07
+bk352, 30, 39, 0.04
+bk671, 43, 32, 0.04
+bk749, 36, 33, 0.03
+bk810, 31, 39, 0.03
+bk768, 42, 60, 0.06
+bk196, 42, 36, 0.05
+bk34, 32, 42, 0.01
+bk569, 41, 58, 0.04
+bk982, 38, 47, 0.05
+bk686, 39, 33, 0.07
+bk498, 42, 30, 0.02
+bk220, 36, 34, 0.07
+bk74, 30, 31, 0.07
+bk513, 26, 40, 0.03
+bk605, 30, 37, 0.06
+bk448, 28, 35, 0.05
+bk881, 40, 54, 0.04
+bk944, 39, 47, 0.02
+bk904, 34, 43, 0.01
+bk920, 26, 19, 0.01
+bk235, 40, 62, 0.05
+bk306, 32, 26, 0.06
+bk629, 35, 32, 0.02
+
+Connections:
+C_9 bk35 bk1 bk23 bk19 bk40 bk42 bk40;
+C_14 bk22 bk31 bk16 bk43 bk39 bk12 bk26;
+C_10 bk16 bk13 bk15 bk6 bk43 bk33 bk38 bk13 bk31;
+C_5 bk15 bk9 bk25 bk15 bk3 bk40 bk15 bk42 bk2;
+C_20 bk28 bk27 bk39 bk40 bk38 bk29 bk14;
+C_19 bk43 bk29 bk21 bk33 bk12 bk9;
+C_3 bk13 bk9 bk42 bk30 bk40 bk20 bk24 bk6;
+C_39 bk26 bk4 bk26 bk4 bk17 bk34 bk42 bk27 bk6 bk42;
+C_2 bk4 bk21 bk2 bk6 bk29 bk8 bk42 bk34 bk41 bk27;
+C_5 bk39 bk43 bk43 bk32 bk26 bk10 bk34 bk31 bk35;
+C_0 bk10 bk1 bk26 bk26 bk1;
+C_21 bk39 bk8 bk13;
+C_33 bk43 bk1 bk41 bk17 bk38 bk8 bk12 bk20;
+C_18 bk25 bk20 bk33 bk38 bk17 bk38;
+C_14 bk16 bk42 bk30 bk13 bk38 bk11 bk41 bk4 bk8 bk15;
+C_12 bk24 bk3 bk8 bk32 bk31;
+C_28 bk36 bk33 bk32 bk40 bk2 bk14 bk34 bk6;
+C_31 bk2 bk37 bk19 bk4 bk23 bk43 bk40;
+C_17 bk29 bk31 bk8 bk32 bk5 bk42 bk23;
+C_30 bk36 bk39;
+C_10 bk16 bk1 bk9 bk39 bk6;
+C_12 bk3 bk18 bk6 bk2;
+C_20 bk42 bk43 bk23;
+C_40 bk31 bk18;
+C_18 bk2 bk36 bk33 bk19 bk21 bk30 bk35;
+C_27 bk10 bk21 bk19 bk24 bk20 bk43;
+C_26 bk41 bk21 bk21;

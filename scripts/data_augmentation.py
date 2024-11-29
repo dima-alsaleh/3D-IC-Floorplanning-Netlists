@@ -1,43 +1,67 @@
 import os
-import shutil
+import random
 
-def remove_duplicates(source_dir, target_dir):
-    """
-    Removes duplicate files based on their base names (before '.' or '_').
-    Only one copy of each duplicate is saved in the target directory.
+# Statistics
+width_avg = 132.17
+width_q1 = 23.00
+width_q3 = 44.00
+width_med = 34.00
 
-    Args:
-        source_dir (str): The directory to scan for files.
-        target_dir (str): The directory to save unique files.
-    """
-    if not os.path.exists(source_dir):
-        print(f"Source directory does not exist: {source_dir}")
-        return
+power_avg = 0.46
+power_q1 = 0.01
+power_q3 = 0.07
+power_med = 0.02
 
-    if not os.path.exists(target_dir):
-        os.makedirs(target_dir)
+aspect_ratio_avg = 1.22
+aspect_ratio_q1 = 0.68
+aspect_ratio_q3 = 1.54
+aspect_ratio_med = 1.00
 
-    # Dictionary to track unique base names
-    unique_files = {}
+def generate_block_name(index):
+    return f"bk{index}"
 
-    # Walk through the source directory
-    for root, _, files in os.walk(source_dir):
-        for file in files:
-            # Extract the base name (before '.' or '_')
-            base_name = file.split('.')[0].split('_')[0]
-            if base_name not in unique_files:
-                unique_files[base_name] = os.path.join(root, file)
-    
-    # Copy unique files to the target directory
-    for base_name, file_path in unique_files.items():
-        shutil.copy(file_path, os.path.join(target_dir, os.path.basename(file_path)))
+def generate_block_data():
+    # Generate realistic dimensions and power within the range
+    width = random.uniform(width_q1, width_q3)
+    height = width * random.uniform(aspect_ratio_q1, aspect_ratio_q3)
+    power = random.uniform(power_q1, power_q3)
+    return f"{generate_block_name(random.randint(1, 999))}, {int(width)}, {int(height)}, {round(power, 2)}"
 
-    print(f"Unique files copied to {target_dir}")
+def generate_connection_name(index):
+    return f"C_{index}"
+
+def generate_connection_data(num_blocks):
+    net_name = generate_connection_name(random.randint(0, num_blocks))
+    connected_blocks = " ".join(
+        generate_block_name(random.randint(1, num_blocks)) for _ in range(random.randint(2, 10))
+    )
+    return f"{net_name} {connected_blocks};"
+
+def generate_file_content(num_blocks):
+    content = ["Blocks:"]
+    for _ in range(num_blocks):
+        content.append(generate_block_data())
+
+    num_connections = random.randint(10, 50)
+    content.append("\nConnections:")
+    for i in range(num_connections):
+        content.append(generate_connection_data(num_blocks))
+
+    return "\n".join(content)
+
+def main(output_dir):
+    os.makedirs(output_dir, exist_ok=True)
+    for i in range(50):
+        file_name = os.path.join(output_dir, f"generated_netlist_{i+1}.txt")
+        num_blocks = random.randint(30, 300)
+        file_content = generate_file_content(num_blocks)
+        with open(file_name, "w") as f:
+            f.write(file_content)
+    print(f"Generated 50 files in {output_dir}")
 
 if __name__ == "__main__":
-    # Input and output directories
-    source_directory = r"C:\Users\Admin\Desktop\ECSE 689\d3\3D-IC-Floorplanning-Netlists\extracted_data"
-    target_directory = os.path.join(os.path.dirname(source_directory), "extracted data duplicates removed")
-
-    # Remove duplicates
-    remove_duplicates(source_directory, target_directory)
+    import argparse
+    parser = argparse.ArgumentParser(description="Generate test files.")
+    parser.add_argument("output_path", type=str, help="Output directory for the files.")
+    args = parser.parse_args()
+    main(args.output_path)

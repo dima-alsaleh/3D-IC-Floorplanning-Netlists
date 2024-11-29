@@ -1,0 +1,81 @@
+Blocks:
+bk54, 24, 31, 0.04
+bk667, 31, 37, 0.07
+bk280, 34, 40, 0.03
+bk363, 39, 36, 0.02
+bk130, 26, 20, 0.05
+bk180, 33, 43, 0.05
+bk905, 29, 27, 0.02
+bk602, 26, 38, 0.04
+bk624, 33, 44, 0.04
+bk823, 35, 50, 0.03
+bk210, 42, 53, 0.04
+bk947, 40, 43, 0.04
+bk978, 27, 24, 0.04
+bk693, 30, 42, 0.05
+bk6, 36, 29, 0.04
+bk361, 36, 33, 0.05
+bk215, 37, 44, 0.01
+bk600, 40, 62, 0.06
+bk236, 25, 38, 0.06
+bk427, 23, 34, 0.05
+bk754, 29, 43, 0.02
+bk209, 32, 24, 0.04
+bk90, 39, 31, 0.02
+bk335, 41, 50, 0.03
+bk706, 24, 19, 0.07
+bk232, 27, 20, 0.02
+bk742, 37, 48, 0.03
+bk248, 27, 29, 0.03
+bk918, 32, 23, 0.04
+bk679, 23, 25, 0.05
+bk667, 23, 30, 0.05
+bk989, 40, 50, 0.04
+bk852, 38, 51, 0.05
+bk762, 41, 30, 0.03
+bk21, 23, 17, 0.03
+bk678, 29, 33, 0.05
+bk909, 33, 45, 0.07
+bk519, 34, 25, 0.05
+
+Connections:
+C_18 bk35 bk12 bk3 bk23 bk21 bk32 bk38 bk38 bk32;
+C_10 bk2 bk11 bk19 bk16 bk9 bk11 bk19 bk19 bk29 bk13;
+C_32 bk35 bk21 bk12 bk23 bk25;
+C_25 bk27 bk34 bk3;
+C_31 bk2 bk19 bk26 bk10;
+C_19 bk29 bk4 bk32;
+C_8 bk37 bk26 bk24 bk12 bk8 bk33 bk37 bk38;
+C_30 bk20 bk30 bk26 bk6;
+C_4 bk17 bk37 bk8 bk10 bk5;
+C_5 bk6 bk5 bk28 bk14 bk25 bk1 bk35 bk19 bk21 bk10;
+C_33 bk13 bk7 bk16 bk37;
+C_35 bk14 bk11 bk12 bk11 bk5 bk11 bk28;
+C_16 bk8 bk4 bk38 bk7 bk17 bk19 bk9 bk16;
+C_8 bk9 bk12 bk22 bk18 bk37 bk2 bk17 bk32 bk20 bk2;
+C_26 bk21 bk31 bk10 bk3 bk7 bk27;
+C_28 bk33 bk33 bk32 bk27 bk15 bk37 bk7 bk16 bk28 bk15;
+C_9 bk25 bk13;
+C_27 bk23 bk33 bk2 bk14 bk34 bk7 bk1 bk37 bk34 bk28;
+C_33 bk31 bk29 bk28 bk14 bk2 bk1 bk35 bk12 bk13 bk7;
+C_32 bk28 bk21 bk32 bk29 bk9;
+C_24 bk15 bk30 bk13 bk2;
+C_8 bk10 bk20 bk9;
+C_24 bk26 bk28 bk16 bk3;
+C_10 bk37 bk22 bk5 bk22 bk14;
+C_14 bk32 bk14 bk21 bk2 bk8 bk35;
+C_8 bk2 bk22 bk32 bk7 bk25 bk32;
+C_35 bk14 bk23 bk1 bk27 bk32 bk27 bk31;
+C_21 bk27 bk11 bk14 bk4 bk15 bk3 bk7;
+C_6 bk17 bk18 bk19 bk14 bk25 bk3 bk35 bk12 bk29 bk18;
+C_18 bk3 bk10;
+C_16 bk1 bk32;
+C_17 bk8 bk27 bk25 bk33 bk24 bk34 bk14 bk12 bk35;
+C_22 bk6 bk9 bk25 bk5 bk30 bk23 bk14 bk2 bk16 bk27;
+C_38 bk20 bk17;
+C_10 bk15 bk22 bk8 bk11 bk7 bk35 bk37;
+C_0 bk6 bk38 bk21 bk35 bk28 bk5;
+C_34 bk36 bk21 bk20 bk5 bk33 bk26 bk23;
+C_12 bk20 bk23;
+C_0 bk30 bk5 bk17 bk5 bk11;
+C_3 bk13 bk33 bk9 bk6 bk6 bk8 bk13;

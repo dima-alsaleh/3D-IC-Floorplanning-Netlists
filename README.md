@@ -406,7 +406,7 @@ To complete data uniformization you need to follow the below steps.
           ```bash
           python remove_duplicates.py <input_directory> <output_directory>
           ```
-          But, replace <input_directory> with the path where the folders containing uniformed netlists based on each source, can be found. In this repository the input path corresponds to  [Extracted Data with Duplicates](refined%20extracted%20data/extracted%20data%20with%20duplicates/).
+          But, replace <input_directory> with the path where the folders containing uniformed netlists based on each source, can be found. In this repository the input path corresponds to  [Extracted Data with Duplicates](./refined%20data/extracted%20data%20with%20duplicates/).
           And replace <output_directory> with the desired location where the files should be saved.
               - If the input or output directory path contains spaces, enclose it in double quotes (`"`).  
                 For example:  
@@ -424,7 +424,7 @@ To complete data uniformization you need to follow the below steps.
           ```bash
           python generate_statistics_extracted_data.py <input_directory> <output_directory>
           ```
-          But, replace <input_directory> with the path where the netlists without duplicates were saved. This essentially corresponds to the output path of the previous step (duplicate removal). In this repository the input path for this step corresponds to  [Extracted Data without Duplicates](refined%20extracted%20data/extracted%20data%20without%20duplicates/)
+          But, replace <input_directory> with the path where the netlists without duplicates were saved. This essentially corresponds to the output path of the previous step (duplicate removal). In this repository the input path for this step corresponds to  [Extracted Data without Duplicates](./refined%20data/extracted%20data%20without%20duplicates/)
           And replace <output_directory> with the desired location where the files should be saved. We decided to save at [Statistics Refined Data](statistics%20refined%20data/).
               - If the input or output directory path contains spaces, enclose it in double quotes (`"`).  
                 For example:  
@@ -434,7 +434,7 @@ To complete data uniformization you need to follow the below steps.
    - **Statistical Analysis**:
      - We notice that all netlists share some patterns in terms of number of connections per blocks, power requirement, width and aspect ratio, even though netlists were designed by different industry players. 
      - Results from Statistical Analysis
-         Below a brief statistical description of the collected data is offered, for further information, please do not hesitate to contact the repository manager dima.alsaleh@mail.mcgill.ca or to review the figures in the [`statistics refined data`](statistics%20refined%20data/) directory.
+         Below a brief statistical description of the collected data is offered, for further information, please do not hesitate to contact the repository manager dima.alsaleh@mail.mcgill.ca or to review the figures in the [`statistics refined data`](./statistics%20of%20refined%20data/) directory.
 
         * Overview
         The netlists exhibit common patterns across several parameters, including the number of connections per block, power requirements, widths, and aspect ratios, despite being designed by different industry players. Below is a detailed statistical analysis based on the provided data.

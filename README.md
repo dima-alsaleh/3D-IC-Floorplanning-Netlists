@@ -72,7 +72,7 @@ Contains processed IC netlists that have been standardized for consistency acros
     - `Corblivar/`: Contains standardized netlists originally retrieved from the Corblivar repository.
     Note: Some netlists in the raw data were not standardized because they contained both soft and hard blocks. Soft blocks, which lack fixed dimensions, fall outside the scope of this work.
 
-  - `extracted_data_without_duplicates/`:  
+  - `extracted data without duplicates/`:  
     This subdirectory consolidates all standardized netlists from the five sources into a single folder. Duplicates have been removed to ensure unique entries, facilitating clean analysis and comparison.
 
 - **How to Read standardized Files**

@@ -425,7 +425,7 @@ To complete data uniformization you need to follow the below steps.
           python generate_statistics_extracted_data.py <input_directory> <output_directory>
           ```
           But, replace <input_directory> with the path where the netlists without duplicates were saved. This essentially corresponds to the output path of the previous step (duplicate removal). In this repository the input path for this step corresponds to  [Extracted Data without Duplicates](./refined%20data/extracted%20data%20without%20duplicates/)
-          And replace <output_directory> with the desired location where the files should be saved. We decided to save at [Statistics Refined Data](statistics%20refined%20data/).
+          And replace <output_directory> with the desired location where the files should be saved. We decided to save at [Statistics Refined Data](./statistics%20of%20refined%20data/stats_summary.csv).
               - If the input or output directory path contains spaces, enclose it in double quotes (`"`).  
                 For example:  
                 ```bash

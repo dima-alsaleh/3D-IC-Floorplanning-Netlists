@@ -40,9 +40,9 @@ Contains unprocessed IC netlists retrieved from the identified data sources.
   
   - `HotSpot/`: Netlists from the HotSpot repository on Github, https://github.com/uvahotspot/HotSpot/tree/master/examples/example6, accessed on November 20, 2024.
 
-  - `smu/`: Netlists from the SMU platform. https://s2.smu.edu/~manikas/Benchmarks/MCNC_Benchmark_Netlists.html, , accessed on November 19, 2024.
+  - `SMU/`: Netlists from the SMU platform. https://s2.smu.edu/~manikas/Benchmarks/MCNC_Benchmark_Netlists.html, , accessed on November 19, 2024.
 
-  - `um/`: Netlists from the UM platform. http://vlsicad.eecs.umich.edu/BK/CompaSS/results/gsrc_soft.html  accessed on November 19, 2024.
+  - `UM/`: Netlists from the UM platform. http://vlsicad.eecs.umich.edu/BK/CompaSS/results/gsrc_soft.html  accessed on November 19, 2024.
 
 
   The raw netlists are provided in their various original formats (e.g., .txt, .nets). Formats were determined through reviewing associated documentation, including README files and posted explanations on their respective links.
@@ -53,8 +53,8 @@ Contains unprocessed IC netlists retrieved from the identified data sources.
 This directory includes all scripts required for data management, cleaning, statistical analysis, and augmentation.
 
 - **Subdirectories**: 
-  - `data_collection_scripts.py`: Automates the retrieval of data from GitHub (i.e., Corblivar, Hotspot, and DeepMind).
-  - `data_extraction_scripts.py`: standardizes netlists by format and units for each data source.
+  - `data_collection_scripts`: Scripts that automate the retrieval of data from GitHub (i.e., Corblivar, Hotspot, and DeepMind).
+  - `data_extraction_scripts`: Scripts that standardize netlists by format and units for each data source.
 - `remove_duplicates.py`: Detects duplicate netlists and removes them to improve data quality.
 - `generate_statistics_extracted_data.py`: Statistically analyzes the netlists without duplicates and generates relevant figures.
 - `data_augmentation.py` (optional): Expands data by generating new netlists based on existing ones.
@@ -65,11 +65,11 @@ Contains processed IC netlists that have been standardized for consistency acros
 - **Subdirectories**:
   - `extracted data with duplicates/`:  
     This subdirectory contains five folders, each corresponding to one of the original data sources. The netlists in these folders have been standardized into a common format for ease of analysis. The folders are structured as follows:
-    - `UM/`: Contains standardized netlists originally retrieved from the UM platform.
-    - `SMU/`: Contains standardized netlists originally retrieved from the SMU platform.
-    - `HotSpot/`: Contains standardized netlists originally retrieved from the HotSpot repository.
-    - `DeepMind/`: Contains standardized netlists originally retrieved from the DeepMind repository.
-    - `Corblivar/`: Contains standardized netlists originally retrieved from the Corblivar repository.
+    - `UM_netlists/`: Contains standardized netlists originally retrieved from the UM platform.
+    - `SMU_netlists/`: Contains standardized netlists originally retrieved from the SMU platform.
+    - `HotSpot_netlists/`: Contains standardized netlists originally retrieved from the HotSpot repository.
+    - `DeepMind_netlists/`: Contains standardized netlists originally retrieved from the DeepMind repository.
+    - `Corblivar_netlists/`: Contains standardized netlists originally retrieved from the Corblivar repository.
     Note: Some netlists in the raw data were not standardized because they contained both soft and hard blocks. Soft blocks, which lack fixed dimensions, fall outside the scope of this work.
 
   - `extracted data without duplicates/`:  
@@ -96,7 +96,7 @@ Contains processed IC netlists that have been standardized for consistency acros
 
   
 
-### 4. `statistics refined data/`
+### 4. `statistics of refined data/`
 Holds a statistical summary of the extracted data without duplicates and visualizations describing the various netlists. All files in this folder were generated using the script generate_statistics_extracted_data.py
 
 
@@ -401,8 +401,7 @@ To complete data uniformization you need to follow the below steps.
 
       To remove duplicates please follow the steps below. 
         - **Steps for removing duplicates**:
-          1. In the terminal, navigate to the path where the script for removing duplicates is saved:  
-             [Scripts for Removing Duplicates](scripts)
+          1. In the terminal, navigate to the path where the script for removing duplicates is saved: [Scripts for Removing Duplicates](scripts)
           2. Run the following command:  
           ```bash
           python remove_duplicates.py <input_directory> <output_directory>
